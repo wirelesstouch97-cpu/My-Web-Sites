@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+wireless-phone-fix.preview.emergentagent.com	TRUE	/	FALSE	1999999999	__cf_bm	o2bQrfdvxb1.JXnusMIdS9ePemjIEHFw_KrRdKyYsVc-1783960009.2109714-1.0.1.1-MiUxMpfnWFgck9.ASpdoVU17Vf3tHdBsXiHRMiwpZm0o3PwzS1MB8B3qOjm25ixveXeK4KyspjixvTyj3R_w7Hhlo1boG4wfSNNJDrvLbYfqR8eBv.jVcOl9.z36JQ4K
+preview.emergentagent.com	TRUE	/	FALSE	1999999999	SameSite	None
+
