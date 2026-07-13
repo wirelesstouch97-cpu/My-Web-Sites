@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireless Touch | Phone, Computer &amp; Console Repair in Kenner, LA | 504-371-2262</title>
+<meta name="description" content="Fast, expert phone repair in Kenner, LA. iPhone screen replacement, battery repair, charging port fix, computer, tablet, Xbox & PlayStation repair. 17+ years experience at 3112 Loyola Dr. Call 504-371-2262.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#050505;
+    --paper:#f2efe9;
+    --bone:#dcd6c9;
+    --signal:#ff5a2c;
+    --line: rgba(242,239,233,0.14);
+    --line-soft: rgba(242,239,233,0.08);
+    --font-display:'Fraunces', serif;
+    --font-body:'Space Grotesk', sans-serif;
+    --font-mono:'JetBrains Mono', monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 32px;}
+  @media(max-width:720px){.wrap{padding:0 20px;}}
+
+  .eyebrow{
+    font-family:var(--font-mono);
+    text-transform:uppercase;
+    font-size:11px;
+    letter-spacing:0.16em;
+    color:var(--signal);
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--signal);}
+
+  h1,h2,h3{font-family:var(--font-display);font-weight:600;margin:0;letter-spacing:-0.01em;}
+
+  /* NAV */
+  header.site{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 32px;
+    background:linear-gradient(to bottom, rgba(5,5,5,0.9), rgba(5,5,5,0));
+    backdrop-filter:blur(2px);
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:19px;}
+  .brand .mark{width:30px;height:30px;border-radius:50%;background:var(--signal);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:12px;color:var(--ink);font-weight:700;}
+  nav.links{display:flex;gap:30px;font-size:13px;text-transform:uppercase;letter-spacing:0.08em;font-family:var(--font-mono);}
+  nav.links a{opacity:0.75;transition:opacity .2s;}
+  nav.links a:hover{opacity:1;}
+  .nav-call{
+    font-family:var(--font-mono);font-size:13px;letter-spacing:0.05em;
+    border:1px solid var(--line);padding:9px 16px;border-radius:100px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .nav-call::before{content:"";width:6px;height:6px;border-radius:50%;background:#5eff8f;box-shadow:0 0 8px #5eff8f;}
+  @media(max-width:900px){nav.links{display:none;}}
+
+  /* HERO */
+  .hero{
+    position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:120px 0 0;overflow:hidden;
+  }
+  .hero-bg{position:absolute;inset:0;z-index:0;}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(0.5) contrast(1.05) brightness(0.55);}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0.35) 40%, rgba(5,5,5,0.97) 92%);}
+  .hero-inner{position:relative;z-index:2;padding-bottom:56px;}
+  .status-pill{
+    font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;
+    display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);padding:7px 14px;border-radius:100px;margin-bottom:26px;
+  }
+  .status-pill span.dot{width:6px;height:6px;border-radius:50%;background:#5eff8f;box-shadow:0 0 8px #5eff8f;}
+  h1.headline{
+    font-size:clamp(52px, 9.5vw, 128px);
+    line-height:0.94;
+    margin-bottom:26px;
+  }
+  h1.headline em{font-style:italic;color:var(--signal);}
+  .hero-sub{
+    max-width:480px;font-size:17px;line-height:1.55;color:rgba(242,239,233,0.75);margin-bottom:38px;
+  }
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px;}
+  .btn{
+    font-family:var(--font-mono);font-size:13px;letter-spacing:0.05em;text-transform:uppercase;
+    padding:15px 26px;border-radius:100px;display:inline-flex;align-items:center;gap:10px;
+    transition:transform .25s ease, background .25s ease;
+  }
+  .btn-solid{background:var(--signal);color:var(--ink);font-weight:600;}
+  .btn-solid:hover{transform:translateY(-2px);}
+  .btn-ghost{border:1px solid var(--line);}
+  .btn-ghost:hover{background:var(--line-soft);}
+  .hero-meta{
+    display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;
+    padding-top:26px;border-top:1px solid var(--line);
+    font-family:var(--font-mono);font-size:12px;color:rgba(242,239,233,0.55);
+  }
+  .hero-meta .idx{color:var(--paper);}
+
+  /* MARQUEE */
+  .marquee-strip{
+    background:var(--signal);color:var(--ink);padding:14px 0;overflow:hidden;white-space:nowrap;
+    font-family:var(--font-mono);font-size:13px;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;
+  }
+  .marquee-track{display:inline-block;animation:scroll 32s linear infinite;}
+  .marquee-track span{margin:0 26px;}
+  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  section{padding:120px 0;position:relative;}
+  @media(max-width:720px){section{padding:80px 0;}}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:60px;gap:30px;flex-wrap:wrap;}
+  .section-head h2{font-size:clamp(32px,4.6vw,58px);line-height:1.02;max-width:640px;}
+  .section-head p{max-width:340px;color:rgba(242,239,233,0.6);font-size:14.5px;line-height:1.6;}
+
+  /* SERVICES */
+  .service-row{
+    display:grid;grid-template-columns:0.9fr 1.3fr;gap:60px;align-items:center;
+    padding:50px 0;border-top:1px solid var(--line);
+  }
+  .service-row:last-child{border-bottom:1px solid var(--line);}
+  @media(max-width:860px){.service-row{grid-template-columns:1fr;gap:26px;}}
+  .service-media{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:2px;}
+  .service-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(0.35) contrast(1.05);transition:filter .4s ease;}
+  .service-row:hover .service-media img{filter:grayscale(0) contrast(1.1);}
+  .chapter-tag{font-family:var(--font-mono);font-size:11px;color:var(--signal);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:14px;}
+  .service-copy h3{font-size:clamp(28px,3.4vw,42px);margin-bottom:6px;}
+  .service-copy .sub{font-family:var(--font-mono);font-size:12.5px;color:rgba(242,239,233,0.5);margin-bottom:22px;letter-spacing:0.03em;}
+  .service-copy ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+  .service-copy li{font-size:14.5px;color:rgba(242,239,233,0.78);display:flex;gap:12px;align-items:baseline;}
+  .service-copy li::before{content:"—";color:var(--signal);flex-shrink:0;}
+
+  /* MANIFESTO */
+  .manifesto{background:var(--paper);color:var(--ink);}
+  .manifesto .eyebrow{color:#b53f1c;}
+  .manifesto .eyebrow::before{background:#b53f1c;}
+  .manifesto h2{font-size:clamp(36px,6vw,72px);max-width:760px;line-height:1.02;margin:26px 0 30px;}
+  .manifesto h2 .num{color:#b53f1c;}
+  .manifesto-lead{max-width:600px;font-size:17px;line-height:1.6;color:rgba(5,5,5,0.68);margin-bottom:70px;}
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid rgba(5,5,5,0.14);padding-top:36px;margin-bottom:90px;}
+  .stat{border-left:1px solid rgba(5,5,5,0.14);padding-left:22px;}
+  .stat .num{font-family:var(--font-display);font-size:clamp(36px,4.8vw,56px);line-height:1;font-weight:700;}
+  .stat .label{font-family:var(--font-mono);font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(5,5,5,0.55);margin-top:8px;}
+  @media(max-width:720px){.stat-row{grid-template-columns:1fr 1fr;}}
+
+  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(5,5,5,0.14);border:1px solid rgba(5,5,5,0.14);}
+  .process-cell{background:var(--paper);padding:34px 28px;}
+  .process-cell .n{font-family:var(--font-mono);font-size:12px;color:#b53f1c;margin-bottom:18px;}
+  .process-cell h3{font-size:21px;margin-bottom:12px;}
+  .process-cell p{font-size:13.5px;line-height:1.55;color:rgba(5,5,5,0.62);margin:0;}
+  @media(max-width:860px){.process-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:520px){.process-grid{grid-template-columns:1fr;}}
+
+  /* PRODUCTS */
+  .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);}
+  .product-card{background:var(--ink);position:relative;aspect-ratio:3/4;overflow:hidden;}
+  .product-card img{width:100%;height:100%;object-fit:cover;opacity:0.55;transition:opacity .35s,transform .5s;}
+  .product-card:hover img{opacity:0.85;transform:scale(1.04);}
+  .product-info{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(to top, rgba(5,5,5,0.95), transparent);}
+  .product-info .tag{font-family:var(--font-mono);font-size:10.5px;color:var(--signal);letter-spacing:0.1em;margin-bottom:8px;display:block;}
+  .product-info h3{font-size:19px;margin-bottom:6px;}
+  .product-info p{font-size:12.5px;color:rgba(242,239,233,0.62);margin:0;line-height:1.4;}
+  @media(max-width:860px){.product-grid{grid-template-columns:1fr 1fr;}}
+
+  /* BRANDS */
+  .brands-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:46px 0;}
+  .brands-strip .eyebrow{margin-bottom:30px;}
+  .brand-list{display:flex;flex-wrap:wrap;gap:14px 40px;font-family:var(--font-display);font-size:clamp(20px,2.6vw,30px);color:rgba(242,239,233,0.4);}
+  .brand-list span{transition:color .2s;cursor:default;}
+  .brand-list span:hover{color:var(--paper);}
+
+  /* VISIT */
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;padding:0;}
+  .visit-media{position:relative;min-height:520px;}
+  .visit-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:grayscale(0.4);}
+  .visit-copy{padding:110px 70px;display:flex;flex-direction:column;justify-content:center;}
+  .visit-copy h2{font-size:clamp(34px,4.2vw,54px);margin:22px 0 36px;line-height:1.05;}
+  .visit-detail{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--line);}
+  .visit-detail:last-of-type{border-bottom:1px solid var(--line);margin-bottom:36px;}
+  .visit-detail .k{font-family:var(--font-mono);font-size:11px;color:rgba(242,239,233,0.45);text-transform:uppercase;letter-spacing:0.08em;width:110px;flex-shrink:0;padding-top:2px;}
+  .visit-detail .v{font-size:15.5px;}
+  @media(max-width:900px){.visit{grid-template-columns:1fr;}.visit-copy{padding:70px 28px;}.visit-media{min-height:340px;}}
+
+  /* REVIEWS */
+  .review-track{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .review-card{background:var(--ink);padding:36px 28px;display:flex;flex-direction:column;justify-content:space-between;min-height:280px;}
+  .stars{color:var(--signal);font-size:14px;letter-spacing:2px;margin-bottom:20px;}
+  .review-card blockquote{font-family:var(--font-display);font-size:17px;line-height:1.45;margin:0 0 26px;font-weight:450;}
+  .review-who{font-family:var(--font-mono);font-size:11.5px;color:rgba(242,239,233,0.5);}
+  .review-who b{color:var(--paper);font-weight:600;display:block;font-size:13px;margin-bottom:3px;font-family:var(--font-body);}
+  @media(max-width:900px){.review-track{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.review-track{grid-template-columns:1fr;}}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:70px;}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-links{display:grid;gap:0;margin-top:36px;}
+  .contact-link{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-top:1px solid var(--line);font-size:16px;}
+  .contact-link:last-child{border-bottom:1px solid var(--line);}
+  .contact-link .k{font-family:var(--font-mono);font-size:11px;color:rgba(242,239,233,0.45);text-transform:uppercase;letter-spacing:0.08em;}
+  .contact-link .arrow{opacity:0.4;transition:transform .2s, opacity .2s;}
+  .contact-link:hover .arrow{opacity:1;transform:translateX(4px);}
+
+  form.quote{display:grid;gap:18px;}
+  .field{border-bottom:1px solid var(--line);padding-bottom:14px;position:relative;}
+  .field label{font-family:var(--font-mono);font-size:11px;color:rgba(242,239,233,0.45);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:10px;}
+  .field input, .field select, .field textarea{
+    width:100%;background:transparent;border:none;outline:none;color:var(--paper);
+    font-family:var(--font-body);font-size:16px;padding:0;resize:none;
+  }
+  .field select option{background:var(--ink);}
+  .field textarea{min-height:70px;}
+  .submit-row{display:flex;justify-content:flex-end;margin-top:12px;}
+  .submit-btn{
+    font-family:var(--font-mono);font-size:13px;letter-spacing:0.05em;text-transform:uppercase;
+    background:var(--signal);color:var(--ink);border:none;padding:16px 30px;border-radius:100px;cursor:pointer;font-weight:600;
+    display:inline-flex;align-items:center;gap:10px;transition:transform .2s;
+  }
+  .submit-btn:hover{transform:translateY(-2px);}
+  .form-note{font-size:12.5px;color:rgba(242,239,233,0.4);margin-top:14px;}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:70px 0 30px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:60px;}
+  @media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:36px;}}
+  .foot-grid h4{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(242,239,233,0.45);margin-bottom:18px;}
+  .foot-grid p, .foot-grid a{font-size:14.5px;line-height:1.7;color:rgba(242,239,233,0.75);}
+  .foot-grid .flinks{display:flex;flex-direction:column;gap:10px;}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;border-top:1px solid var(--line);flex-wrap:wrap;gap:14px;font-family:var(--font-mono);font-size:11.5px;color:rgba(242,239,233,0.4);}
+
+  .fab-call{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    background:var(--signal);color:var(--ink);font-family:var(--font-mono);font-weight:700;font-size:13px;
+    padding:15px 22px;border-radius:100px;display:flex;align-items:center;gap:8px;
+    box-shadow:0 10px 30px rgba(255,90,44,0.35);
+  }
+  @media(min-width:901px){.fab-call{display:none;}}
+
+  ::selection{background:var(--signal);color:var(--ink);}
+  :focus-visible{outline:2px solid var(--signal);outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .marquee-track{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a href="#hero" class="brand"><span class="mark">WT</span>Wireless Touch</a>
+  <nav class="links">
+    <a href="#services">Services</a>
+    <a href="#manifesto">Manifesto</a>
+    <a href="#products">Products</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="tel:+15043712262" class="nav-call">504-371-2262</a>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?auto=format&fit=crop&w=1800&q=80" alt="Repair workbench">
+  </div>
+  <div class="wrap hero-inner">
+    <div class="status-pill"><span class="dot"></span> Open · Walk-ins Welcome · Kenner, LA</div>
+    <h1 class="headline">Precision.<br><em>Restored.</em></h1>
+    <p class="hero-sub">Expert repairs for phones, computers, tablets &amp; consoles — 17+ years of hands-on craft in Kenner, Louisiana.</p>
+    <div class="hero-ctas">
+      <a href="tel:+15043712262" class="btn btn-solid">Call 504-371-2262</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=3112+Loyola+Dr+Kenner+LA+70065" target="_blank" rel="noopener" class="btn btn-ghost">Get Directions</a>
+    </div>
+    <div class="hero-meta">
+      <span class="idx">Index / 001</span>
+      <span>30.0194° N / 90.2370° W — 3112 Loyola Dr, Kenner, LA 70065</span>
+      <span>Repair · Bill Pay · Buy · Sell</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Phone Repair</span><span>iPhone Screen Fix</span><span>Battery Replacement</span><span>Charging Port Repair</span><span>Cracked Screen</span><span>Samsung Repair</span><span>Motorola Repair</span><span>Tablet Repair</span><span>Xbox Repair</span><span>PlayStation Fix</span><span>Computer Repair</span><span>Water Damage</span>
+    <span>Phone Repair</span><span>iPhone Screen Fix</span><span>Battery Replacement</span><span>Charging Port Repair</span><span>Cracked Screen</span><span>Samsung Repair</span><span>Motorola Repair</span><span>Tablet Repair</span><span>Xbox Repair</span><span>PlayStation Fix</span><span>Computer Repair</span><span>Water Damage</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Services / 001—004</div>
+        <h2 style="margin-top:18px;">We fix the things that run your life.</h2>
+      </div>
+      <p>From cracked iPhone screens to overheating PlayStations — bring it in, get it back working the same day, most of the time.</p>
+    </div>
+
+    <div class="service-row">
+      <div class="service-media"><img src="https://images.unsplash.com/photo-1588515603140-81bd9f7d1db0?auto=format&fit=crop&w=1200&q=80" alt="Phone repair"></div>
+      <div class="service-copy">
+        <div class="chapter-tag">Chapter 01</div>
+        <h3>Phones</h3>
+        <div class="sub">Apple · Samsung · Motorola</div>
+        <ul>
+          <li>iPhone screen replacement</li>
+          <li>Battery replacement</li>
+          <li>Charging port repair</li>
+          <li>Back glass, camera, speakers</li>
+          <li>Water damage recovery</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-media"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1200&q=80" alt="Computer repair"></div>
+      <div class="service-copy">
+        <div class="chapter-tag">Chapter 02</div>
+        <h3>Computers</h3>
+        <div class="sub">Windows · macOS · Chromebook</div>
+        <ul>
+          <li>Laptop &amp; desktop diagnostics</li>
+          <li>Screen and keyboard repair</li>
+          <li>Virus &amp; malware removal</li>
+          <li>Data recovery &amp; transfer</li>
+          <li>Upgrades: SSD / RAM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-media"><img src="https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=1200&q=80" alt="Tablet repair"></div>
+      <div class="service-copy">
+        <div class="chapter-tag">Chapter 03</div>
+        <h3>Tablets</h3>
+        <div class="sub">iPad · Galaxy Tab</div>
+        <ul>
+          <li>iPad glass &amp; LCD replacement</li>
+          <li>Battery and charging port</li>
+          <li>Home &amp; power button repair</li>
+          <li>Software / iCloud issues</li>
+          <li>All Samsung Galaxy Tabs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-media"><img src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?auto=format&fit=crop&w=1200&q=80" alt="Game console repair"></div>
+      <div class="service-copy">
+        <div class="chapter-tag">Chapter 04</div>
+        <h3>Game Consoles</h3>
+        <div class="sub">Xbox · PlayStation · Nintendo</div>
+        <ul>
+          <li>HDMI port replacement</li>
+          <li>Disc drive repair</li>
+          <li>Overheating &amp; fan service</li>
+          <li>Controller stick drift fix</li>
+          <li>Full deep-clean service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="manifesto">
+  <div class="wrap">
+    <div class="eyebrow">Manifesto</div>
+    <h2>17 years <span class="num">of craft.</span></h2>
+    <p class="manifesto-lead">Wireless Touch isn't a chain kiosk. It's a workbench, a magnifying lamp, and a stubborn refusal to send a customer home with a half-fixed phone.</p>
+
+    <div class="stat-row">
+      <div class="stat"><div class="num">17+</div><div class="label">Years</div></div>
+      <div class="stat"><div class="num">10k+</div><div class="label">Devices Saved</div></div>
+      <div class="stat"><div class="num">1</div><div class="label">Shop, Kenner</div></div>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-cell">
+        <div class="n">01</div>
+        <h3>Diagnose</h3>
+        <p>Every device gets a hands-on inspection — no guessing, no upsell. You get a clear price and honest timeline before we open a single screw.</p>
+      </div>
+      <div class="process-cell">
+        <div class="n">02</div>
+        <h3>Repair</h3>
+        <p>17 years of muscle memory. Micro-soldering, board-level work, screen calibration — done with premium OEM-grade parts, not eBay knock-offs.</p>
+      </div>
+      <div class="process-cell">
+        <div class="n">03</div>
+        <h3>Verify</h3>
+        <p>Multi-point testing before you walk out. Cameras, speakers, mics, touch, sensors, charging — checked twice. If it isn't right, we don't hand it over.</p>
+      </div>
+      <div class="process-cell">
+        <div class="n">04</div>
+        <h3>Warranty</h3>
+        <p>Repairs come with a warranty and a handshake. Something feels off next week? Bring it back — we make it right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Buy in-store</div>
+        <h2 style="margin-top:18px;">Accessories, on the shelf.</h2>
+      </div>
+      <p>Everything you'd expect from a real phone shop — and a few things you wouldn't. Cases, glass, chargers, batteries, cables. Come pick one up.</p>
+    </div>
+  </div>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1535157412991-2ef801c1748b?auto=format&fit=crop&w=800&q=80" alt="Phone cases">
+      <div class="product-info"><span class="tag">A—01</span><h3>Phone Cases</h3><p>Rugged, clear, slim, MagSafe. iPhone · Samsung · Motorola.</p></div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1592286927505-1def25115558?auto=format&fit=crop&w=800&q=80" alt="Screen protectors">
+      <div class="product-info"><span class="tag">A—02</span><h3>Screen Protectors</h3><p>Tempered glass &amp; privacy film. Installed while you wait.</p></div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1492107376256-4026437926cd?auto=format&fit=crop&w=800&q=80" alt="Chargers and cables">
+      <div class="product-info"><span class="tag">A—03</span><h3>Chargers &amp; Cables</h3><p>USB-C, Lightning, fast-chargers, wireless pads.</p></div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="More accessories">
+      <div class="product-info"><span class="tag">A—04</span><h3>And Much More</h3><p>Batteries, PopSockets, adapters, memory cards, accessories.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="wrap">
+  <div class="brands-strip">
+    <div class="eyebrow">We service</div>
+    <div class="brand-list">
+      <span>Apple</span><span>Samsung</span><span>Motorola</span><span>Google Pixel</span><span>LG</span><span>OnePlus</span><span>PlayStation</span><span>Xbox</span><span>Nintendo</span><span>Dell</span><span>HP</span><span>Lenovo</span>
+    </div>
+  </div>
+</div>
+
+<!-- VISIT -->
+<section class="visit" id="visit" style="padding:0;">
+  <div class="visit-media">
+    <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=1200&q=80" alt="Wireless Touch storefront">
+  </div>
+  <div class="visit-copy wrap" style="padding-left:0;">
+    <div class="eyebrow">Visit / 3112 Loyola Dr.</div>
+    <h2>Walk in.<br>Walk out fixed.</h2>
+    <div class="visit-detail"><div class="k">Address</div><div class="v">3112 Loyola Dr, Kenner, LA 70065</div></div>
+    <div class="visit-detail"><div class="k">Mon–Sat</div><div class="v">9:00 AM – 8:00 PM</div></div>
+    <div class="visit-detail"><div class="k">Sunday</div><div class="v">11:00 AM – 6:00 PM</div></div>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=3112+Loyola+Dr+Kenner+LA+70065" target="_blank" rel="noopener" class="btn btn-solid" style="width:fit-content;">Get Directions</a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Voices</div>
+        <h2 style="margin-top:18px;">Neighbors, not customers.</h2>
+      </div>
+      <p>4.9 average across Google &amp; Facebook</p>
+    </div>
+  </div>
+  <div class="review-track">
+    <div class="review-card">
+      <div><div class="stars">★★★★★</div><blockquote>"Dropped my iPhone in the pool on Saturday. Wireless Touch had it back to life before Sunday brunch. Prices were fair and Riz explained everything."</blockquote></div>
+      <div class="review-who"><b>Danielle M.</b>Kenner, LA — Review 01</div>
+    </div>
+    <div class="review-card">
+      <div><div class="stars">★★★★★</div><blockquote>"These guys fixed a charging port on my son's PlayStation that another shop said was unfixable. Been coming here for years — never disappointed."</blockquote></div>
+      <div class="review-who"><b>Marcus T.</b>Metairie, LA — Review 02</div>
+    </div>
+    <div class="review-card">
+      <div><div class="stars">★★★★★</div><blockquote>"Cracked screen on my Galaxy S23 replaced in about 45 minutes. Warranty, real OEM part, and cheaper than Best Buy quoted me."</blockquote></div>
+      <div class="review-who"><b>Aisha R.</b>New Orleans, LA — Review 03</div>
+    </div>
+    <div class="review-card">
+      <div><div class="stars">★★★★★</div><blockquote>"Bought a case and screen protector, they installed it perfectly with zero bubbles. Small local shop energy, big-city expertise."</blockquote></div>
+      <div class="review-who"><b>Jorge C.</b>River Ridge, LA — Review 04</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Let's talk</div>
+    <h2 style="margin-top:18px;font-size:clamp(32px,4.6vw,58px);max-width:600px;">Get a quote in minutes.</h2>
+    <p style="max-width:480px;color:rgba(242,239,233,0.6);font-size:15px;margin-top:18px;">Fastest way is to call. If you'd rather type, drop your info and a quick description — we'll text or ring back with a price.</p>
+
+    <div class="contact-grid" style="margin-top:60px;">
+      <div>
+        <div class="contact-links">
+          <a href="tel:+15043712262" class="contact-link"><span><span class="k">Phone</span><br>504-371-2262</span><span class="arrow">→</span></a>
+          <a href="mailto:wirelesstouch97@gmail.com" class="contact-link"><span><span class="k">Email</span><br>wirelesstouch97@gmail.com</span><span class="arrow">→</span></a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=3112+Loyola+Dr+Kenner+LA+70065" target="_blank" rel="noopener" class="contact-link"><span><span class="k">Address</span><br>3112 Loyola Dr, Kenner, LA 70065</span><span class="arrow">→</span></a>
+        </div>
+        <div style="margin-top:30px;border-radius:2px;overflow:hidden;border:1px solid var(--line);">
+          <iframe src="https://www.google.com/maps?q=3112+Loyola+Dr+Kenner+LA+70065&output=embed" width="100%" height="260" style="border:0;filter:grayscale(0.4) invert(0.92) contrast(0.9);" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <form class="quote" id="quoteForm">
+        <div class="field">
+          <label>01 / Name</label>
+          <input type="text" name="name" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label>02 / Phone</label>
+          <input type="tel" name="phone" required placeholder="(504) 000-0000">
+        </div>
+        <div class="field">
+          <label>03 / Email (optional)</label>
+          <input type="email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label>04 / Device</label>
+          <select name="device" required>
+            <option value="">Select one</option>
+            <option>iPhone</option>
+            <option>Android</option>
+            <option>Tablet / iPad</option>
+            <option>Computer / Laptop</option>
+            <option>PlayStation</option>
+            <option>Xbox</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>05 / What's going on?</label>
+          <textarea name="details" placeholder="Cracked screen, won't charge, etc."></textarea>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="submit-btn">Send quote request →</button>
+        </div>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#hero" class="brand" style="margin-bottom:16px;"><span class="mark">WT</span>Wireless Touch</a>
+        <p style="max-width:320px;">Family-owned phone, computer, tablet &amp; console repair in Kenner, Louisiana. 17+ years and counting.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>3112 Loyola Dr<br>Kenner, LA 70065</p>
+        <p style="margin-top:10px;">Mon–Sat 9:00 AM – 8:00 PM<br>Sunday 11:00 AM – 6:00 PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="flinks">
+          <a href="tel:+15043712262">504-371-2262</a>
+          <a href="mailto:wirelesstouch97@gmail.com">wirelesstouch97@gmail.com</a>
+        </div>
+        <h4 style="margin-top:26px;">Follow</h4>
+        <div class="flinks">
+          <a href="https://share.google/TNyZcZ0nYnhvIQ31C" target="_blank" rel="noopener">Google Business</a>
+          <a href="https://www.facebook.com/profile.php?id=61592058233042" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/wirelesstouch.kenner/" target="_blank" rel="noopener">@wirelesstouch.kenner</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Wireless Touch · Kenner, LA</span>
+      <span>Phone repair · iPhone screen · Battery · Charging port · Xbox · PlayStation</span>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+15043712262" class="fab-call">📞 Call now</a>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('formNote').textContent = "Thanks — we'll reach out shortly. For faster service, call 504-371-2262.";
+  this.reset();
+});
+</script>
+
+</body>
+</html>
